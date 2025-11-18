@@ -1,27 +1,146 @@
-<form
-  action="https://formspree.io/f/xdkywprq"
-  method="POST"
->
-  <label>
-    Your name:
-   <input type="text" placeholder="Your Name" required>
-  </label>
-  <br>
-  <label>
-    Your Phone Number:
-  <input type="tel" placeholder="Your Phone Number" required>
-    </label>
-<br>
-  <label>
-    Pick-Up OR Delivery (on campus)
-    <input type="text" id="deliveryLocation" placeholder="Your location on campus" style="display:none;">
-    <textarea name="message"></textarea>
-  </label>
-  <br>
-  <label>
-Any additional notes or special requests?
-      <textarea id="additionalNotes" placeholder="Any additional notes or special requests?" rows="3"></textarea>
-  </label>
-<br>
-  <button type="submit">Confirm Order</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wahat Al-Bashaer Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <nav id="nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="section">
+  <img src="banner.png" alt="banner" id=banner1>
+</section>
+ 
+
+<section id="menu" class="section">
+  <h2>Our Menu</h2><br>
+  <p>Select a Category:</p>
+    <ul class="category-list">
+  <li>
+    <a href="#sandwiches">
+      <img src="sandwich_category.png" width="150">
+      <p>Sandwiches</p>
+    </a>
+  </li>
+
+  <li>
+    <a href="#juices">
+      <img src="juice_category.png" width="150">
+      <p>Juices</p>
+    </a>
+  </li>
+
+  <li>
+    <a href="#pizza">
+      <img src="pizza_category.png" width="150">
+      <p>Pizza</p>
+    </a>
+  </li>
+  </ul>
+</section>
+
+<section id="sandwiches" class="section">
+  <h3>Sandwiches</h3>
+
+  <ul class="food-list">
+    <li>
+      <img src="chicken_sandwich.png" alt="Chicken Sandwich" width="100">
+      Chicken Sandwich - BD 1.5 
+      <button>Add to Cart</button>
+    </li>
+
+    <li>
+      <img src="beef_sandwich.png" alt="Beef Sandwich" width="100">
+      Beef Sandwich - BD 2.0 
+      <button>Add to Cart</button>
+    </li>
+  </ul>
+
+</section>
+
+<section id="juices" class="section">
+  <h3>Juices</h3>
+
+  <ul class="food-list">
+    <li>
+      <img src="orange_juice.png" alt="Orange Juice" width="100">
+      Orange Juice - BD 1.0 
+      <button>Add to Cart</button>
+    </li>
+
+    <li>
+      <img src="apple_juice.png" alt="Apple Juice" width="100">
+      Apple Juice - BD 1.2 
+      <button>Add to Cart</button>
+    </li>
+  </ul>
+
+</section>
+
+<section id="pizza" class="section">
+  <h3>Pizza</h3>
+
+  <ul class="food-list">
+    <li>
+      <img src="margherita_pizza.png" alt="Margherita Pizza" width="100">
+      Margherita - BD 1.8 
+      <button>Add to Cart</button>
+    </li>
+
+    <li>
+      <img src="pepperoni_pizza.png" alt="Pepperoni Pizza" width="100">
+      Pepperoni - BD 2.0 
+      <button>Add to Cart</button>
+    </li>
+  </ul>
+
+</section>
+
+<section id="cartSection" class="section">
+  <h2>Your Cart</h2> <br>
+
+     
+  <form class="cart-form">
+      <label for="name">Your Name</label>
+  <input type="text" id="name" required />
+
+    
+    <label for="phone">Your Phone Number</label>
+<input type="text" id="phone" required />
+
+    <label for="pickupDelivery">Pick-up or Delivery</label>
+<input type="text" id="pickupDelivery" required />
+  
+
+    <label for="notes">Any additional notes or special requests?</label>
+<textarea id="notes" rows="3"></textarea><br>
+
+    <button type="submit">Confirm Order</button>
+  </form>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: +973 1234 5678</p>
+  <p>📍 Location: Campus A</p>
+</section>
+
+<footer>
+  <p id= "footer1">© 2025 Wahat Al-Bashaer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
