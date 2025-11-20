@@ -6,7 +6,7 @@
 }
 
 .images img {
-    width: 150px;
+    width: 120px;
     height: auto;
     object-fit: cover;
 }
@@ -18,7 +18,7 @@
     padding: 10px;
 }
 
-@media (min-width: 150px) {
+@media (min-width: 120px) {
     .images {
         grid-template-columns: 1fr 1fr;
     }
@@ -84,10 +84,12 @@ nav ul{list-style:none;
   text-decoration: none;}
 
 .table td img {
-    width: 100%; 
-    height: auto;
-    border-radius: 5px;
-  }
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 .table button {
     padding: 8px;
