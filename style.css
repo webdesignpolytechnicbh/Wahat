@@ -5,11 +5,25 @@
   font-family: DM Sans, Arial; text-decoration: none;
 }
 
-.images img{max-width: 100%; height: auto;}
+.images img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
 
-.images {display: grid; grid-template-columns:1fr; gap: 10px; padding 10px;}
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
 
-@media (min-width: 150px){.images {grid-template-columns:1fr 1fr;}}
+@media (min-width: 150px) {
+    .images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   margin: 0;
