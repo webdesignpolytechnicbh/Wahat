@@ -9,7 +9,7 @@
 
 .images {display: grid; grid-template-columns:1fr; gap: 10px; padding 10px;}
 
-@media (min-width: 600px){.images {grid-template-columns:1fr 1fr;}}
+@media (min-width: 150px){.images {grid-template-columns:1fr 1fr;}}
 body {
   font-family: "DM Sans", sans-serif;
   margin: 0;
