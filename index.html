@@ -184,19 +184,23 @@
   <form class="cart-form" action="https://formspree.io/f/xrbrgagz" method="POST">
 
     <label for="name">Your Name</label>
-    <input type="text" id="name" required />
+    <input type="text" id="name" name="name" required />
+<br>
 
     <label for="phone">Your Phone Number</label>
-    <input type="text" id="phone" required />
+    <input type="text" id="phone" name="phone" required />
+<br>
 
     <label for="pickupDelivery">Pick-up or Delivery</label>
-    <input type="text" id="pickupDelivery" required />
+    <input type="text" id="pickupDelivery" name="pickupDelivery" required />
+<br>
 
     <label for="notes">Any additional notes or special requests?</label>
-    <textarea id="notes" rows="3"></textarea><br>
+    <textarea id="notes" name="notes" rows="3"></textarea>
+<br>
 
     <button type="submit">Confirm Order</button>
-  </form>
+</form>
 </section>
 
 
