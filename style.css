@@ -72,7 +72,7 @@ nav ul{list-style:none;
     width: 100%;
     border-collapse: collapse;
     box-shadow: 0 4px 10px;
-   
+   background-color: white;
   }
 
 .table th {
