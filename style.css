@@ -121,10 +121,6 @@ nav ul{list-style:none;
     border-radius: 10px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 
 .cart-form { display: flex;
   flex-direction: column; 
