@@ -158,9 +158,9 @@ p, label {color:#737373;}
 
 .hover {
   padding: 5px;
-  background: #fffcef;
-  color: white;
+  background: white;
+  color: black;
 one;
 }
-.hover:hover {background: #fffcef;
+.hover:hover {background: white;
 transform: scale(0.1);}
