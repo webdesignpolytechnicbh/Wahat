@@ -156,7 +156,11 @@ p, label {color:#737373;}
 
 #footer1 {color:#fffcef;}
 
-.hover { padding: 15px;
-  background: green;
+.hover {
+  padding: 5px;
+  background: #fffcef;
   color: white;
-one;}
+one;
+}
+.hover:hover {background: #fffcef;
+transform: scale(1.1);}
