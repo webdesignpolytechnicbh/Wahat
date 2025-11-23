@@ -36,5 +36,5 @@ document.getElementsByTagName("tr")[1].onclick = function () {
   
   document.getElementsByClassName("cart-form")[0].onsubmit = function () {
   alert("Your order has been submitted!");
-  return false;
+  return true;
 };
