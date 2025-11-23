@@ -162,5 +162,7 @@ p, label {color:#737373;}
   color: black;
 one;
 }
-.hover:hover {background: white;
-transform: scale(0.5);}
+.hover:hover { background: darkgrey;
+transform: scale (1.1);
+             
+             }
