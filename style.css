@@ -169,3 +169,5 @@ transform: scale (1.1);
 
 #home.section {padding: 0 !important;
     margin: 0 auto !important;    }
+#banner1{transition: 0.5s;}
+#banner1:hover {transform: scale(1);}
