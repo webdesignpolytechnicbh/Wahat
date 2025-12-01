@@ -1,41 +1,19 @@
-document.getElementsByTagName("button")[0].onclick = function () {
-  alert("Club Sandwich added to cart");
-};
+var form = document.getElementsByClassName("cart-form")[0];
 
-document.getElementsByTagName("button")[1].onclick = function () {
-  alert("Beef Burger added to cart");
-};
+var label = document.createElement("label");
+label.textContent = "Your Order:";
 
-document.getElementsByTagName("button")[2].onclick = function () {
-  alert("Orange Juice added to cart");
-};
+var textarea = document.createElement("textarea");
+textarea.rows = 6;
+textarea.placeholder = "Write your full order here...";
+textarea.required = true;
 
-document.getElementsByTagName("button")[3].onclick = function () {
-  alert("Banana Juice added to cart");
-};
+// Insert before the last form element (submit button)
+form.insertBefore(label, form.lastElementChild);
+form.insertBefore(textarea, form.lastElementChild);
 
-document.getElementsByTagName("button")[4].onclick = function () {
-  alert("Margherita Pizza added to cart");
-};
-
-document.getElementsByTagName("button")[5].onclick = function () {
-  alert("Veggie Pizza added to cart");
-};
-
-document.getElementsByTagName("button")[6].onclick = function () {
-  alert("Pen added to cart");
-};
-
-document.getElementsByTagName("button")[7].onclick = function () {
-  alert("Notebook added to cart");
-};
-
-document.getElementsByTagName("button")[8].onclick = function () {
-  alert("Highlighter added to cart");
-};
-
-
-document.getElementsByClassName("cart-form")[0].onsubmit = function () {
+// Form submit alert (unchanged)
+form.onsubmit = function () {
   alert("Your order has been received!");
   return true;
 };
