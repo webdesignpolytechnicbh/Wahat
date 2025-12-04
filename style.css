@@ -171,3 +171,9 @@ transform: scale (1.1);
     margin: 0 auto !important;    }
 #banner1{transition: 0.5s;}
 #banner1:hover {transform: scale(1);}
+
+h3 {width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 40px 0 10p;
+   color: #800020;}
