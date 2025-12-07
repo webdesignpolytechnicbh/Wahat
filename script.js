@@ -4,3 +4,7 @@ form.onsubmit = function () {
   alert("Your order has been received!");
   return true; // allow form submission
 };
+
+document.getElementsByTagName("td").onclick = function () {
+  alert("All prices are subject to VAT");
+};
